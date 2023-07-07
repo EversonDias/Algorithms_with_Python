@@ -37,10 +37,11 @@ def merge(left, right):
 
 
 def is_anagram(first_string, second_string):
-    if not first_string or not second_string:
-        return (first_string, second_string, False)
     first_string_order = ''.join(merge_sort(first_string.lower()))
     second_string_order = ''.join(merge_sort(second_string.lower()))
-    if first_string_order != second_string_order:
-        return (first_string, second_string, False)
-    return (first_string, second_string, True)
+
+    string_equal = first_string_order != second_string_order
+    string_empty = not first_string_order and not second_string_order
+    if string_equal or string_empty:
+        return first_string_order, second_string_order, False
+    return first_string_order, second_string_order, True
