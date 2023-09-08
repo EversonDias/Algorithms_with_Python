@@ -37,7 +37,7 @@ Para acessar e executar este projeto, siga os passos abaixo:
 2. Clone o Projeto
 
 ```bash
-git clone  Algorithms
+git clone https://github.com/EversonDias/Algorithms_with_Python.git Algorithms
 ```
 
 3. Entre no projeto
